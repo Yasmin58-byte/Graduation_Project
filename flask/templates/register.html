@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Signup</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='images/IMG-20231020-WA0006-removebg-preview2.png') }}">
+   
+
+</head>
+<body>
+   
+
+    <div class="background-image"><a href= "/" id="homeButton" class="home-button">Home</a></div>
+    <img src="{{ url_for('static', filename='images/logo2.png')}}"  alt="Logo" class="logo2">
+    <form id="signUpForm" class="form2" action="/signup" method="POST">
+        <h2>Sign up</h2>
+        <br>
+        <div class="input-container2">
+            <i class="fas fa-user icon"></i>
+            <input type="text" placeholder="UserName" name="username" required>
+        </div>
+        <div class="input-container2">
+            <i class="fas fa-envelope icon"></i>
+            <input type="email" placeholder="Email" name="email" required>
+             
+        </div>
+        <div class="input-container2">
+            <i class="fas fa-lock icon"></i>
+            <input type="password" placeholder="Password" name="password" required>
+        </div>
+        <div class="input-container2">
+            <i class="fas fa-user icon"></i>
+            <input type="password" placeholder="Confirm Password" name="confirm_password" required>
+        </div>
+        <p id="passwordError" class="error-message"></p>
+        <div>
+            <!-- Flash Messages -->
+            {% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+        <ul>
+            {% for message in messages %}
+                {% if message|length == 2 %}
+                    {% set category, message = message %}
+                    <li {% if category == 'danger' %}style="color: red;"{% elif category == 'success' %}style="color: green;"{% endif %}>
+                        {{ message }}
+                    </li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+    {% endif %}
+{% endwith %}  </div>
+        <button type="submit" >Sign Up</button>
+        <p class="p1">Already have an account?<a href="/sigin" id="alreadyHaveAccount" class="styled-link"> Sign in</a></p>
+        
+    </form>
+    
+
+<script src="{{ url_for('static', filename='js/signup java.Js') }}"></script>
+
+</body>
+</html>

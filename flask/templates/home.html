@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style3.css') }}">
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='images/IMG-20231020-WA0006-removebg-preview2.png') }}">
+    <title>Home</title>
+</head>
+<body>
+    <div class="hero">
+        <video autoplay loop muted plays-inline class="backvideo">
+            <source src="{{ url_for('static', filename='images/WhatsApp Video 2023-11-13 at 11.57.30 AM.mp4') }}" type="video/mp4">
+        </video>
+<nav>
+    <img src="{{ url_for('static', filename='images/IMG-20231020-WA0006-removebg-preview.png') }}" class="logo">
+
+<div class="links">
+    <a href="/sigin" class="link1">Sign In</a>
+    <a href="/signup" class="link2">Sign Up</a>
+</div>
+    </div>
+</body>
+</html>

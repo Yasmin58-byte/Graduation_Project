@@ -1,0 +1,57 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    padding: 0% 5% ;
+
+}
+nav{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+
+}
+nav .logo{
+  position: absolute;
+    width: 100px;
+    top: -7px;
+    left: 1px;
+}
+.links{
+    position: absolute;
+    width: 100px;
+
+}
+.links .link1 {
+    text-decoration: none;
+    position: relative;
+    top: 22px;
+    left: 120px;
+    font-size: 25px;
+    color: #7ac7f4;
+}
+.links .link2 {
+    text-decoration: none;
+    position: relative;
+    top: -5px;
+    left: 250px;
+    font-size: 25px;
+    color: #7ac7f4;
+}
+.backvideo{
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    width: 100%;
+}
+

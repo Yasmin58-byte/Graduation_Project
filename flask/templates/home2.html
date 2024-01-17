@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" media="screen" href="{{ url_for('static', filename='css/home2.css') }}">
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='images/IMG-20231020-WA0006-removebg-preview2.png') }}">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Home</title>
+</head>
+<body>
+    <div class="section1">
+        <nav>    <img src="{{ url_for('static', filename='images/IMG-20231020-WA0006-removebg-preview.png') }}" class="logo">
+            <img src="{{ url_for ('static',filename='images/user.png')}}"  class="user">
+            <p  id="usernameParagraph" class="p4"> {{ username }}</p>
+        </nav>
+        
+        <div class="linkss">
+                <a href="#section2" class="a1">History</a>
+                <a href="#section3" class="a2">Summary</a>
+        </div>
+        <p class="p1">Welcome {{ username }}! Your data journey begins here </p> 
+        <p class="p2">Ready to turn your data into </p>
+        <p class="p3">meaningful insights</p>
+        <a href="#" class="button">Creat your project</a>
+       
+
+    </div>
+
+    <div id="section2">
+        <h1>Project History</h1>
+    <a href="#" class="inf1 par">Project history</a>
+    <a href="#" class="inf2 par">Data history</a>
+    <table >
+        <thead>
+            <th>Project Name</th>
+            <th>Date</th>
+
+            <th>Description</th>
+            <th>Project Domain</th>
+        </thead>
+        <tbody>
+            {% for project in projects %}
+                <tr>
+                    <td>{{ project.project_name}}</td>
+                    <td>{{ project.creation_date }}</td>
+
+                    <td>{{ project.description}}</td>
+                    <td>{{ project.Domain}}</td>
+
+
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    </div>
+    <div id="section3">
+        <h1>Summary</h1>
+        <div class="container">
+            <div class="chart-section">
+              <canvas id="barchart_values"></canvas>
+            </div>
+            <div class="circle" id="circle1"></div>
+            <div class="circle-text" id="circle1-text">Data Base Accesses</div>
+      
+            <div class="circle" id="circle2"></div>
+            <div class="circle-text" id="circle2-text">Number of projects </div>
+            <div id="projectCount" data-count="{{ project_count|default(0) }}"></div>
+
+           
+      
+            <div class="circle" id="circle3"></div>
+            <div class="circle-text" id="circle3-text">Average Project Duration</div>
+          </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/java.js') }}" defer></script>
+
+</body>
+</html>
