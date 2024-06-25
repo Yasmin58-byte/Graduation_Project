@@ -12,17 +12,22 @@
     <div class="section1">
         <nav>    <img src="{{ url_for('static', filename='images/IMG-20231020-WA0006-removebg-preview.png') }}" class="logo">
             <img src="{{ url_for ('static',filename='images/user.png')}}"  class="user">
-            <p  id="usernameParagraph" class="p4"> {{ username }}</p>
+            <p id="usernameParagraph" class="p4">{{ username }}</p>
         </nav>
         
         <div class="linkss">
                 <a href="#section2" class="a1">History</a>
                 <a href="#section3" class="a2">Summary</a>
+                <a href="/"><img src="{{ url_for ('static',filename='images/logout.jpg')}}" class="m1" style="height: 35px;width:35px ;position: absolute;left: 1240px;top: 25px;"></a>
         </div>
         <p class="p1">Welcome {{ username }}! Your data journey begins here </p> 
         <p class="p2">Ready to turn your data into </p>
         <p class="p3">meaningful insights</p>
-        <a href="#" class="button">Creat your project</a>
+        <form action="/create_project" method="post" style="display: inline;">
+            <button type="submit" class="button">Create your project</button>
+        </form>
+        
+        
        
 
     </div>
@@ -35,9 +40,8 @@
         <thead>
             <th>Project Name</th>
             <th>Date</th>
-
-            <th>Description</th>
             <th>Project Domain</th>
+            <th>Report name</th>
         </thead>
         <tbody>
             {% for project in projects %}
@@ -45,9 +49,8 @@
                     <td>{{ project.project_name}}</td>
                     <td>{{ project.creation_date }}</td>
 
-                    <td>{{ project.description}}</td>
-                    <td>{{ project.Domain}}</td>
-
+                    <td>{{ project.report_domain}}</td>
+                    <td>{{project.report_name}}</td>
 
                 </tr>
             {% endfor %}
@@ -58,7 +61,8 @@
         <h1>Summary</h1>
         <div class="container">
             <div class="chart-section">
-              <canvas id="barchart_values"></canvas>
+              <canvas id="barchart_values" width="600" height="300"></canvas>
+
             </div>
             <div class="circle" id="circle1"></div>
             <div class="circle-text" id="circle1-text">Data Base Accesses</div>
@@ -70,7 +74,18 @@
            
       
             <div class="circle" id="circle3"></div>
-            <div class="circle-text" id="circle3-text">Average Project Duration</div>
+            <div class="circle-text" id="circle3-text">Number of Reports</div>
+            <div id="reportCount" data-count="{{ report_count|default(0) }}"></div>
+
+            <div id="projectCount" data-count="{{ project_count }}"></div>
+    <div id="reportCount" data-count="{{ report_count }}"></div>
+    <div id="businessCount" data-count="{{ business_count }}"></div>
+    <div id="healthCount" data-count="{{ health_count }}"></div>
+    <div id="educationCount" data-count="{{ education_count }}"></div>
+    <div id="sportCount" data-count="{{ sport_count }}"></div>
+    <div id="economicCount" data-count="{{ economic_count }}"></div>
+
+
           </div>
     </div>
     <script src="{{ url_for('static', filename='js/java.js') }}" defer></script>

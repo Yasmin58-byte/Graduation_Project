@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="{{ url_for('static', filename='images/Blue_And_White_Minimalist_Modern_Financial_Company_-_Logo-removebg-preview.png')}}">
+  <title>Bussiness Reports</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/css.css') }}">
+  <link rel="icon" type="image/png" href="{{ url_for('static', filename='images/IMG-20231020-WA0006-removebg-preview.png') }}">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/swiper-bundle.min.css">
+</head>
+<body>
+  <div class="container">
+    <div class="logo-container">
+      <img src="{{ url_for('static', filename='images/IMG-20231020-WA0006-removebg-preview.png') }}" class="logo">
+    </div>
+    <div class="back-link">
+        <p>Back</p>
+    </div>       
+</div>
+<div>
+    <h1>Your Choice, Your Report</h1>
+    <h3>Your Domain is {{ predicted_domains }}</h3>
+</div>
+  <div class="container">
+    <div class="box box01">
+      <form action="{{ url_for('download_template') }}" method="post" id="reportForm" >
+        <input type="hidden" name="user_id" value="{{ session['user_id'] }}">
+
+      <h2>01</h2>
+      <br>
+      <p class="report">Financial Dashboard Navigator</p>
+     
+      <p class="description">analysis of financial performance metrics over time. It provides valuable insights into key indicators such as revenue, expenses, and profit, facilitating informed financial decision-making and enabling effective performance monitoring.</p>
+    
+
+    <img src="{{ url_for('static', filename='images/10307728.png') }}" alt="Icon Photo" class="icon-photo">
+    <img src="{{ url_for('static', filename='images/kisspng-pie-chart-computer-icons-line-chart-area-chart-chart-5aba331e5514d2.5526435915221522223485.jpg') }}" alt="Icon Photo" class="icon-photo">
+    <img src="{{ url_for('static', filename='images/1264939.png') }}" alt="Icon Photo" class="icon-photo">
+    <img src="{{ url_for('static', filename='images/images (4).png') }}" alt="Icon Photo" class="icon-photo">
+      <input type="checkbox" id="cbx01"  name="template_name" value="Business_sales.pbit">
+      <label for="cbx01" class="check">
+          <svg width="18px" height="18px" viewBox="0 0 18 18">
+              <path d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z"></path>
+              <polyline points="1 9 7 14 15 4"></polyline>
+          </svg>
+      </label>
+    </div>          
+    <div class="box box02">
+      <h2>02</h2>
+      <br>
+      <p class="report">Customer Profiling Radar</p>
+      
+      <p class="description">Identify customer segments based on demographics and behavior. This report utilizes customer data to segment the customer base, allowing businesses to tailor marketing strategies and product offerings.</p>
+
+    <img src="{{ url_for('static', filename='images/7581108.png') }}" alt="Icon Photo" class="icon-photo">
+    <img src="{{ url_for('static', filename='images/download (1).png') }}" alt="Icon Photo" class="icon-photo">
+    <img src="{{ url_for('static', filename='images/images.png') }}" alt="Icon Photo" class="icon-photo">
+    <img src="{{ url_for('static', filename='images/histogram-8.png') }}" alt="Icon Photo" class="icon-photo">
+      <input type="checkbox" id="cbx02"  name="template_name"  value="Bank Customer Segmentation Analysiss.pbit">
+      <label for="cbx02" class="check">
+          <svg width="18px" height="18px" viewBox="0 0 18 18">
+              <path d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z"></path>
+              <polyline points="1 9 7 14 15 4"></polyline>
+          </svg>
+      </label>
+    </div> 
+
+    <div class="box box03">
+      <h2>03</h2>
+      <br>
+      <p class="report">Stock Status Spectrum</p>
+      
+      <p class="description">Monitor inventory levels for different products. This report provides an overview of stock status, aiding in inventory management and optimization.</p>
+      
+
+      <img src="{{ url_for('static', filename='images/images (1).png') }}" alt="Icon Photo" class="icon-photo">
+      <img src="{{ url_for('static', filename='images/kisspng-pie-chart-computer-icons-line-chart-area-chart-chart-5aba331e5514d2.5526435915221522223485.jpg') }}" alt="Icon Photo" class="icon-photo">
+      <img src="{{ url_for('static', filename='images/images.png') }}" alt="Icon Photo" class="icon-photo">
+      <img src="{{ url_for('static', filename='images/images (2).png') }}" alt="Icon Photo" class="icon-photo">
+
+      <input type="checkbox" id="cbx03"  name="template_name"  value=".pbit">
+      <label for="cbx03" class="check">
+          <svg width="18px" height="18px" viewBox="0 0 18 18">
+              <path d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z"></path>
+              <polyline points="1 9 7 14 15 4"></polyline>
+          </svg>
+      </label>
+    </div> 
+    <div class="box box04">
+      <h2>04</h2>  
+      <br>
+      <p class="report">Campaign Conversion Compass</p>
+
+      <p class="description">Evaluate the effectiveness of marketing campaigns. This report analyzes campaign data to assess performance and ROI, helping marketers optimize strategies and resource allocation.</p>
+      
+      <img src="{{ url_for('static', filename='images/images (1).png') }}" alt="Icon Photo" class="icon-photo">
+      <img src="{{ url_for('static', filename='images/kisspng-pie-chart-computer-icons-line-chart-area-chart-chart-5aba331e5514d2.5526435915221522223485.jpg') }}" alt="Icon Photo" class="icon-photo">
+      <img src="{{ url_for('static', filename='images/images.png') }}" alt="Icon Photo" class="icon-photo">
+      <img src="{{ url_for('static', filename='images/images (3).png') }}" alt="Icon Photo" class="icon-photo">
+      <input type="checkbox" id="cbx04" name="template_name"  value=".pbit">
+      <label for="cbx04" class="check">
+          <svg width="18px" height="18px" viewBox="0 0 18 18">
+              <path d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z"></path>
+              <polyline points="1 9 7 14 15 4"></polyline>
+          </svg>
+      </label>
+      
+    </div> 
+    <div class="box box05">
+      <h2>05</h2>
+      <br>
+      <p class="report">Revenue Trend Tracker</p>
+      <p class="description">Track revenue trends over time. This report provides insights into the performance of sales revenue over time periods, aiding in strategic planning and decision-making for sales and marketing efforts.</p>
+      
+     
+      
+      <img src="{{ url_for('static', filename='images/10307728.png') }}" alt="Icon Photo" class="icon-photo">
+      <input type="checkbox" id="cbx05" name="template_name"  value=".pbit">
+      <label for="cbx05" class="check">
+        
+          <svg width="18px" height="18px" viewBox="0 0 18 18">
+              <path d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z"></path>
+              <polyline points="1 9 7 14 15 4"></polyline>
+          </svg>
+      </label>
+    </div>  
+     <!-- Add a hidden input for template_name outside the loop -->
+     <input type="hidden" name="template_name" id="template_name">
+
+  
+    <button id="reportButton" class="button" type="submit">Download Chosen Reports</button>
+  </form>
+    <form action="/download_all" method="get">
+      <button id="dataButton" class="button" type="submit">Download Cleaned Data</button>
+  </form>
+  <div id="loader" class="loader"></div>
+
+  <div class="arrow arrow-left">&lt;</div>
+  <div class="arrow arrow-right">&gt;</div>
+  
+
+
+
+  <script src="{{ url_for('static', filename='js/javat.js') }}" defer></script>
+
+</body></html>

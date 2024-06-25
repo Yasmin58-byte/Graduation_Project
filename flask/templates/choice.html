@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/choice.css') }}">
+
+<title>clean method</title>
+
+</head>
+
+<body>
+    <nav>
+        <div>
+            <img src="{{ url_for('static', filename='images/IMG-20231020-WA0006-removebg-preview.png') }}" class="logo">
+        </div>
+        <div>
+            <a href="/connection"><h3>Back</h3></a>
+        </div>
+
+    </nav>  
+<p class="p1">Your Data is not Clean, Please Choice if you Want to<br><p class="p2">Perform The Cleaning Manually or Automatically </p> 
+<form action="/clean_method" method="post">
+    <button type="submit" name="button" value="manual" class="b1">Manual</button>
+    <button type="submit" name="button" value="automatic" class="b2">Automatic</button>
+</form>
+
+
+</body>
+
+</html>

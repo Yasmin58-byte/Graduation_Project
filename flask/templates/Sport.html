@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="{{ url_for('static', filename='images/Blue_And_White_Minimalist_Modern_Financial_Company_-_Logo-removebg-preview.png')}}">
+  <link rel="icon" type="image/png" href="{{ url_for('static', filename='images/IMG-20231020-WA0006-removebg-preview.png') }}">
+  <title>Sport Reports</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/css.css') }}">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/swiper-bundle.min.css">
+</head>
+<body>
+  <div class="container">
+    <div class="logo-container">
+      <img src="{{ url_for('static', filename='images/IMG-20231020-WA0006-removebg-preview.png') }}" class="logo">
+    </div>
+    <div class="back-link">
+        <p>Back</p>
+    </div>       
+</div>
+<div>
+    <h1>Your Choice, Your Report</h1>
+    <h3>Your Domain is {{ predicted_domains }}</h3>
+</div>
+  <div class="container">
+    <div class="box box21">
+      <form action="/download_template" method="post" id="reportForm">
+
+      <h2>01</h2>
+      <br>
+      <p class="report">Athlete Performance Dashboard</p>
+      <p class="description">Evaluate athlete performance metrics. This dashboard aids in assessing performance metrics such as speed and accuracy for individual athletes.</p>
+      <img src="{{ url_for('static', filename='images/radar-chart-1.png') }}" alt="Icon Photo" class="icon-photo">
+      <img src="{{ url_for('static', filename='images/download (1).png') }}" alt="Icon Photo" class="icon-photo">
+      <img src="{{ url_for('static', filename='images/10307728.png') }}" alt="Icon Photo" class="icon-photo">
+      <img src="{{ url_for('static', filename='images/images (1).png') }}" alt="Icon Photo" class="icon-photo">   
+      <input type="checkbox" id="cbx21"  name="template_name" value=".pbit">
+    <label for="cbx21" class="check">
+        <svg width="18px" height="18px" viewBox="0 0 18 18">
+            <path d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z"></path>
+            <polyline points="1 9 7 14 15 4"></polyline>
+        </svg>
+    </label>
+  </div> 
+    <div class="box box22">
+      <h2>02</h2>
+      <br>
+      <p class="report">Injury Prevention Monitor</p>
+      <p class="description">Track and prevent sports-related injuries. This monitor records injury data to track incidence, severity, and recovery progress, aiding in injury prevention and management.</p>
+      <img src="{{ url_for('static', filename='images/images (1).png') }}" alt="Icon Photo" class="icon-photo">
+    <img src="{{ url_for('static', filename='images/kisspng-pie-chart-computer-icons-line-chart-area-chart-chart-5aba331e5514d2.5526435915221522223485.jpg') }}" alt="Icon Photo" class="icon-photo">
+    <img src="{{ url_for('static', filename='images/images (8).png') }}" alt="Icon Photo" class="icon-photo">
+    <img src="{{ url_for('static', filename='images/images (1).jpg') }}" alt="Icon Photo" class="icon-photo">  
+      <input type="checkbox" id="cbx22" name="template_name" value=".pbit">
+      <label for="cbx22" class="check">
+          <svg width="18px" height="18px" viewBox="0 0 18 18">
+              <path d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z"></path>
+              <polyline points="1 9 7 14 15 4"></polyline>
+          </svg>
+      </label>
+    </div> 
+    <div class="box box23">
+      <h2>03</h2>
+      <br>
+      <p class="report">Team Strategy Dashboard</p>
+      <p class="description">Optimize team strategies based on game stats and tactics. This dashboard provides insights into game stats and tactics for sports teams, enabling data-driven decisions to improve team performance.</p>
+      <img src="{{ url_for('static', filename='images/radar-chart-1.png') }}" alt="Icon Photo" class="icon-photo">
+    <img src="{{ url_for('static', filename='images/11452366.png') }}" alt="Icon Photo" class="icon-photo">
+    <img src="{{ url_for('static', filename='images/images.png') }}" alt="Icon Photo" class="icon-photo">
+    <img src="{{ url_for('static', filename='images/images (3).png') }}" alt="Icon Photo" class="icon-photo">  
+      <input type="checkbox" id="cbx23" name="template_name" value=".pbit">
+      <label for="cbx23" class="check">
+          <svg width="18px" height="18px" viewBox="0 0 18 18">
+              <path d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z"></path>
+              <polyline points="1 9 7 14 15 4"></polyline>
+          </svg>
+      </label>
+    </div> 
+    <div class="box box24">
+      <h2>04</h2>
+      <br>
+      <p class="report">Fan Engagement Radar</p>
+      <p class="description">Analyze fan engagement metrics across different channels. This radar chart visualizes fan engagement metrics, aiding in optimizing fan engagement strategies.</p>
+      <img src="{{ url_for('static', filename='images/images.png') }}" alt="Icon Photo" class="icon-photo">
+      <img src="{{ url_for('static', filename='images/download (1).png') }}" alt="Icon Photo" class="icon-photo">
+      <img src="{{ url_for('static', filename='images/10307728.png') }}" alt="Icon Photo" class="icon-photo">
+      <img src="{{ url_for('static', filename='images/images (5).png') }}" alt="Icon Photo" class="icon-photo"> 
+      <input type="checkbox" id="cbx24" name="template_name" value=".pbit">
+      <label for="cbx24" class="check">
+          <svg width="18px" height="18px" viewBox="0 0 18 18">
+              <path d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z"></path>
+              <polyline points="1 9 7 14 15 4"></polyline>
+          </svg>
+      </label>
+    </div> 
+    <div class="box box25">
+      <h2>05</h2>
+      <br>
+      <p class="report">Talent Scouting Radar</p>
+      <p class="description">Scout and recruit talented athletes based on performance. This radar chart visualizes athlete performance metrics, aiding in talent identification and recruitment.</p>
+      <img src="{{ url_for('static', filename='images/radar-chart-1.png') }}" alt="Icon Photo" class="icon-photo">
+      <img src="{{ url_for('static', filename='images/11452366.png') }}" alt="Icon Photo" class="icon-photo">
+      <img src="{{ url_for('static', filename='images/download (1).png') }}" alt="Icon Photo" class="icon-photo">
+      <img src="{{ url_for('static', filename='images/images.png') }}" alt="Icon Photo" class="icon-photo"> 
+      <input type="checkbox" id="cbx25" name="template_name" value=".pbit">
+      <label for="cbx25" class="check">
+          <svg width="18px" height="18px" viewBox="0 0 18 18">
+              <path d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z"></path>
+              <polyline points="1 9 7 14 15 4"></polyline>
+          </svg>
+      </label>
+    </div> 
+  </div>
+ <!-- Add a hidden input for template_name outside the loop -->
+ <input type="hidden" name="template_name" id="template_name">
+  <button id="reportButton" class="button" type="submit">Download Chosen Reports</button></form>
+  <form action="/download_all" method="get">
+    <button id="dataButton" class="button" type="submit">Download Cleaned Data</button>
+</form>
+  <div id="loader" class="loader"></div>
+
+  <div class="arrow arrow-left">&lt;</div>
+  <div class="arrow arrow-right">&gt;</div>
+ 
+
+  <script src="{{ url_for('static', filename='js/javat.js') }}" defer></script>
+
+</body></html>

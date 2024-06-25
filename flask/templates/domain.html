@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/domain.css') }}">
+
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <div>
+            <img src="{{ url_for('static', filename='images/IMG-20231020-WA0006-removebg-preview.png') }}" class="logo">
+        </div>
+        <div>
+            <a href="/complete_meta"><h3>Back</h3></a>
+        </div>
+
+    </nav> 
+    <h1> Congratulations!!<img  src="{{ url_for('static', filename='images/519-5197541_confete-png.png')}}" class="im1"> Domain Classification Completed.</h1> 
+   
+    <img src="{{ url_for('static', filename='images/box.png')}}" class="im2">
+        
+    <p> Domain is :
+        {% for domain in predicted_domains %}
+           {{ domain }}
+        {% endfor %}
+
+
+
+    </p>
+   <a href="/download"> <button > Report</button></a>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/preprocessing.css') }}">
+    <title>Clean Your Database</title>
+</head>
+<body>
+    <nav>
+        <div>
+            <img src="{{ url_for('static', filename='images/IMG-20231020-WA0006-removebg-preview.png') }}" class="logo">
+        </div>
+        <div>
+            <a href="/clean_method"><h3>Back</h3></a>
+        </div>
+    </nav>
+    <h1>Clean Your Database</h1>
+    <form action="/clean" method="POST">
+        <label class="l1">Choose a method to handle nulls:</label><br>
+        <input type="radio" id="mean_nulls" name="replacement_method" value="mean">
+        <label for="mean_nulls">Mean</label><br>
+        <input type="radio" id="mode_nulls" name="replacement_method" value="mode">
+        <label for="mode_nulls">Mode</label><br>
+        <input type="radio" id="backward_fill_nulls" name="replacement_method" value="backward_fill">
+        <label for="backward_fill_nulls">Backward Fill</label><br>
+        <input type="radio" id="forward_fill_nulls" name="replacement_method" value="forward_fill">
+        <label for="forward_fill_nulls">Forward Fill</label><br>
+        <input type="radio" id="delete_nulls" name="replacement_method" value="delete_nulls">
+        <label for="delete_nulls">Delete Nulls</label><br><br>
+        
+        <label class="l2" >Choose a method to handle outliers:</label><br>
+        <input type="radio" id="mean_outliers" name="replacement_method_outliers" value="mean">
+        <label for="mean_outliers">Mean</label><br>
+        <input type="radio" id="median_outliers" name="replacement_method_outliers" value="median">
+        <label for="median_outliers">Median</label><br>
+        <input type="radio" id="remove_outliers" name="replacement_method_outliers" value="remove_outliers">
+        <label for="remove_outliers">Remove Outliers</label><br><br>
+    
+        <input type="submit" value="Clean Data">
+    </form>
+
+    <!-- Flash Messages -->
+{% with messages = get_flashed_messages(with_categories=true) %}
+{% if messages %}
+    <ul>
+        {% for message in messages %}
+            {% if message|length == 2 %}
+                {% set category, message = message %}
+                <li {% if category == 'danger' %}style="color: red;"{% elif category == 'success' %}style="color: green;"{% endif %}>
+                    {{ message }}
+                </li>
+                {% if category == 'success' %}
+                    <!-- Button to proceed to the next step -->
+                    
+                {% endif %}
+            {% endif %}
+        {% endfor %}
+    </ul>
+{% endif %}
+{% endwith %}
+</body>
+</html>

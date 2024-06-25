@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="{{ url_for('static', filename='images/Blue_And_White_Minimalist_Modern_Financial_Company_-_Logo-removebg-preview.png')}}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/css.css') }}">
+  <link rel="icon" type="image/png" href="{{ url_for('static', filename='images/IMG-20231020-WA0006-removebg-preview.png') }}">  <title>Economic Reports</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/swiper-bundle.min.css">
+</head>
+<body>
+  <div class="container">
+    <div class="logo-container">
+      <img src="{{ url_for('static', filename='images/IMG-20231020-WA0006-removebg-preview.png') }}" class="logo">    </div>
+    <div class="back-link">
+        <p>Back</p>
+    </div>       
+</div>
+<div>
+    <h1>Your Choice, Your Report</h1>
+    <h3>Your Domain is {{ predicted_domains }}</h3>
+</div>
+  <div class="container">
+    <div class="box box11">
+      <form action="/download_template" method="post" id="reportForm">
+      <h2>01</h2>
+      <br>
+      <p class="report">Market Trend Tracker</p>
+      <p class="description">Track market trends and economic indicators over time. This tracker monitors stock prices and economic indicators, providing insights into market trends and performance.</p>
+      <img src="{{ url_for('static', filename='images/1264939.png') }}" alt="Icon Photo" class="icon-photo">
+    <img src="{{ url_for('static', filename='images/10307728.png') }}" alt="Icon Photo" class="icon-photo">
+    <img src="{{ url_for('static', filename='images/images.png') }}" alt="Icon Photo" class="icon-photo">
+    <img src="{{ url_for('static', filename='images/8253364.png') }}" alt="Icon Photo" class="icon-photo">
+      <input type="checkbox" id="cbx11"  name="template_name" value=".pbit">
+      <label for="cbx11" class="check">
+          <svg width="18px" height="18px" viewBox="0 0 18 18">
+              <path d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z"></path>
+              <polyline points="1 9 7 14 15 4"></polyline>
+          </svg>
+      </label>
+    </div> 
+    <div class="box box12">
+      <h2>02</h2>
+      <br>
+      <p class="report">Inflation Rate Monitor</p>
+      <p class="description">Monitor inflation rate fluctuations over time. This monitor tracks inflation rate data, providing insights into inflation trends and patterns.</p>
+      <img src="{{ url_for('static', filename='images/histogram-8.png') }}" alt="Icon Photo" class="icon-photo">
+    <img src="{{ url_for('static', filename='images/10307728.png') }}" alt="Icon Photo" class="icon-photo">
+    <img src="{{ url_for('static', filename='images/images.png') }}" alt="Icon Photo" class="icon-photo">
+    <img src="{{ url_for('static', filename='images/9616071.png') }}" alt="Icon Photo" class="icon-photo">      
+      <input type="checkbox" id="cbx12"  name="template_name" value=".pbit">
+      <label for="cbx12" class="check">
+          <svg width="18px" height="18px" viewBox="0 0 18 18">
+              <path d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z"></path>
+              <polyline points="1 9 7 14 15 4"></polyline>
+          </svg>
+      </label>
+    </div> 
+    <div class="box box13">
+      <h2>03</h2>
+      <br>
+      <p class="report">Consumer Behavior Radar</p>
+      <p class="description">Analyze consumer behavior and preferences. This radar chart visualizes consumer behavior metrics, aiding in understanding consumer preferences and trends.</p>
+      <img src="{{ url_for('static', filename='images/kisspng-pie-chart-computer-icons-line-chart-area-chart-chart-5aba331e5514d2.5526435915221522223485.jpg') }}" alt="Icon Photo" class="icon-photo">
+    <img src="{{ url_for('static', filename='images/images (1).png') }}" alt="Icon Photo" class="icon-photo">
+    <img src="{{ url_for('static', filename='images/images.png') }}" alt="Icon Photo" class="icon-photo">
+    <img src="{{ url_for('static', filename='images/wordcloud_128_128.png') }}" alt="Icon Photo" class="icon-photo">
+
+      <input type="checkbox" id="cbx13"  name="template_name" value=".pbit">
+      <label for="cbx13" class="check">
+          <svg width="18px" height="18px" viewBox="0 0 18 18">
+              <path d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z"></path>
+              <polyline points="1 9 7 14 15 4"></polyline>
+          </svg>
+      </label>
+    </div> 
+    <div class="box box14">
+      <h2>04</h2>
+      <br>
+      <p class="report">Economic Impact Dashboard</p>
+      <p class="description">Assess the economic impact of events or policies. This dashboard evaluates the economic impact of events or policy changes on economic metrics such as GDP and employment.</p>
+      <img src="{{ url_for('static', filename='images/11452366.png') }}" alt="Icon Photo" class="icon-photo">
+      <img src="{{ url_for('static', filename='images/360_F_615649859_hJ9rFGe0XU71xhmZy0ZGdHxWx58e0puT.jpg') }}" alt="Icon Photo" class="icon-photo">
+      <img src="{{ url_for('static', filename='images/images.png') }}" alt="Icon Photo" class="icon-photo">
+      <img src="{{ url_for('static', filename='images/sankey_1388945.crop_512x384_0,64.preview.png') }}" alt="Icon Photo" class="icon-photo">
+      <input type="checkbox" id="cbx14"  name="template_name" value=".pbit">
+      <label for="cbx14" class="check">
+          <svg width="18px" height="18px" viewBox="0 0 18 18">
+              <path d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z"></path>
+              <polyline points="1 9 7 14 15 4"></polyline>
+          </svg>
+      </label>
+    </div> 
+    <div class="box box15">
+      <h2>05</h2>
+      <br>
+      <p class="report">Market Forecast Navigator</p>
+      <p class="description">Forecast financial market trends and indices. This navigator provides forecasts of market indices and predictions based on historical data and market analysis.</p>
+      <img src="{{ url_for('static', filename='images/10307728.png') }}" alt="Icon Photo" class="icon-photo">
+    <img src="{{ url_for('static', filename='images/download (1).png') }}" alt="Icon Photo" class="icon-photo">
+    <img src="{{ url_for('static', filename='images/images.png') }}" alt="Icon Photo" class="icon-photo">
+    <img src="{{ url_for('static', filename='images/1264939.png') }}" alt="Icon Photo" class="icon-photo">
+      <input type="checkbox" id="cbx15"  name="template_name" value=".pbit">
+      <label for="cbx15" class="check">
+          <svg width="18px" height="18px" viewBox="0 0 18 18">
+              <path d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z"></path>
+              <polyline points="1 9 7 14 15 4"></polyline>
+          </svg>
+      </label>
+    </div> 
+     <!-- Add a hidden input for template_name outside the loop -->
+     <input type="hidden" name="template_name" id="template_name">
+    <button id="reportButton" class="button" type="submit">Download Chosen Reports</button></form>
+    <form action="/download_all" method="get">
+      <button id="dataButton" class="button" type="submit">Download Cleaned Data</button>
+  </form>
+    
+  <div id="loader" class="loader"></div>
+
+  <div class="arrow arrow-left">&lt;</div>
+  <div class="arrow arrow-right">&gt;</div>
+  
+
+
+
+  <script src="{{ url_for('static', filename='js/javat.js') }}" defer></script>
+
+</body></html>

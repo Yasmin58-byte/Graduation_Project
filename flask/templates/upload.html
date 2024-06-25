@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/ustyle.css') }}">
+
+</head>
+<body>
+<nav>
+    <div>
+        <img src="{{ url_for('static', filename='images/IMG-20231020-WA0006-removebg-preview.png') }}" alt="logo" class="logo">
+    </div>
+    <div>
+        <a href="/"><h3>Back</h3></a>
+    </div>
+</nav>
+
+<section class="data">
+    <p id="p1" class="p1">Please Connect your Data</p>
+    <form class="btns" id="f"  action="/connection"  method="POST">
+      <table>
+        <tr>
+            <td><label for="">Connection:</label></td>
+            <td><input type=" text" name="serverName" placeholder="serverName" required></td>
+            <td><input type=" text" name="dbName" placeholder="dbName" required></td>
+
+        </tr>
+       <tr>
+        <td><label for="">User Name:</label></td>
+        <td><input type="text" name="name" placeholder="Name"></td>
+       </tr>
+       <tr>
+        <td><label for="">Password:</label></td>
+       <td><input type="password" name="password" placeholder="Password"></td>
+       </tr>
+      </table>
+      <div id="connection-message" style="display: none;"></div>
+
+
+
+      <button type="submit" class="btn1" ">Test Connection</button>
+      <!-- <button class="btn2">Save</button> -->
+    </form>
+    <div class="container">
+        <div class="popup" id="popup">
+           <img src="{{ url_for('static', filename='images/verified-icon-png-12-removebg-preview.png') }}" >
+            <h2>Connected Successfully! </h2>
+            <p class="p1">Your data has been successfully connected.Thanks! </p>
+            <form action="/check_cleanliness" method="GET">
+                <button type="submit" onclick="closePopup()">Data Preprocessing And Extract Metadata</button>
+            </form>        </div>
+    </div>
+    
+</section>
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+  
+
+
+</body>
+</html>

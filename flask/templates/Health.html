@@ -1,0 +1,128 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="{{ url_for('static', filename='images/Blue_And_White_Minimalist_Modern_Financial_Company_-_Logo-removebg-preview.png')}}">
+  <title>Health Reports</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/css.css') }}">
+  <link rel="icon" type="image/png" href="{{ url_for('static', filename='images/IMG-20231020-WA0006-removebg-preview.png') }}">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/swiper-bundle.min.css">
+</head>
+<body>
+  <div class="container">
+    <div class="logo-container">
+      <img src="{{ url_for('static', filename='images/IMG-20231020-WA0006-removebg-preview.png') }}" class="logo">    </div>
+    <div class="back-link">
+        <p>Back</p>
+    </div>       
+</div>
+<div>
+    <h1>Your Choice, Your Report</h1>
+    <h3>Your Domain is {{ predicted_domains }}</h3>
+</div>
+  <div class="container">
+    <div class="box box06">
+      <form action="/download_template" method="post" id="reportForm">
+      <h2>01</h2>
+      <br>
+      <p class="report">Disease Diagnostic Dashboard</p>
+      <p class="description"> Diagnose diseases based on patient symptoms. This dashboard assists healthcare professionals in diagnosing diseases by analyzing patient symptoms and providing insights into potential diagnoses.</p>
+      <img src="{{ url_for('static', filename='images/images.png') }}" alt="Icon Photo" class="icon-photo">
+      <img src="{{ url_for('static', filename='images/radar-chart-1.png')}}" alt="Icon Photo" class="icon-photo">
+      <img src="{{ url_for('static', filename='images/360_F_615649859_hJ9rFGe0XU71xhmZy0ZGdHxWx58e0puT.jpg')}}" alt="Icon Photo" class="icon-photo">
+      <img src="{{ url_for('static', filename='images/sankey_1388945.crop_512x384_0,64.preview.png')}}" alt="Icon Photo" class="icon-photo">
+
+
+      <input type="checkbox" id="cbx06"  name="template_name" value="COVID-19 US Tracking.pbit">
+      <label for="cbx06" class="check">
+          <svg width="18px" height="18px" viewBox="0 0 18 18">
+              <path d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z"></path>
+              <polyline points="1 9 7 14 15 4"></polyline>
+          </svg>
+      </label>
+    </div> 
+    <div class="box box07">
+      <h2>02</h2>
+      <br>
+      <p class="report">Patient Health Tracker</p>
+      <p class="description">Monitor patient health indicators over time. This tracker aids in assessing patient wellness and treatment effectiveness by tracking vital signs such as heart rate and blood pressure.</p>
+      <img src="{{ url_for('static', filename='images/11516598.png') }}" alt="Icon Photo" class="icon-photo">
+      <img src="{{ url_for('static', filename='images/download (1).png') }}" alt="Icon Photo" class="icon-photo">
+      <img src="{{ url_for('static', filename='images/10307728.png') }}" alt="Icon Photo" class="icon-photo">
+      <img src="{{ url_for('static', filename='images/9616071.png') }}" alt="Icon Photo" class="icon-photo">
+      <input type="checkbox" id="cbx07" " name="template_name" value=".pbit">
+      <label for="cbx07" class="check">
+          <svg width="18px" height="18px" viewBox="0 0 18 18">
+              <path d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z"></path>
+              <polyline points="1 9 7 14 15 4"></polyline>
+          </svg>
+      </label>
+    </div> 
+    <div class="box box08">
+      <h2>03</h2>
+      <br>
+      <p class="report">Clinical Trial Explorer</p>
+      <p class="description">Analyze clinical trial results and treatment efficacy. This report explores clinical trial data to assess the effectiveness of treatments and interventions.</p>
+      <img src="{{ url_for('static', filename='images/10307728.png') }}" alt="Icon Photo" class="icon-photo">
+    <img src="{{ url_for('static', filename='images/7581108.png') }}" alt="Icon Photo" class="icon-photo">
+    <img src="{{ url_for('static', filename='images/histogram-8.png') }}" alt="Icon Photo" class="icon-photo">
+    <img src="{{ url_for('static', filename='images/images.png') }}" alt="Icon Photo" class="icon-photo">
+      <input type="checkbox" id="cbx08" name="template_name" value=".pbit">
+      <label for="cbx08" class="check">
+          <svg width="18px" height="18px" viewBox="0 0 18 18">
+              <path d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z"></path>
+              <polyline points="1 9 7 14 15 4"></polyline>
+          </svg>
+      </label>
+    </div> 
+    <div class="box box09">
+      <h2>04</h2>
+      <br>
+      <p class="report">Resource Allocation Radar</p>
+      <p class="description">Allocate resources efficiently across healthcare facilities. This radar chart visualizes resource availability across different healthcare facilities, aiding in resource planning and management.</p>
+      <img src="{{ url_for('static', filename='images/images.png') }}" alt="Icon Photo" class="icon-photo">
+      <img src="{{ url_for('static', filename='images/radar-chart-1.png') }}" alt="Icon Photo" class="icon-photo">
+      <img src="{{ url_for('static', filename='images/images (1).png') }}" alt="Icon Photo" class="icon-photo">
+      <img src="{{ url_for('static', filename='images/360_F_615649859_hJ9rFGe0XU71xhmZy0ZGdHxWx58e0puT.jpg') }}" alt="Icon Photo" class="icon-photo">
+      <input type="checkbox" id="cbx09" style="display: none;" name="template_name" value=".pbit">
+      <label for="cbx09" class="check">
+          <svg width="18px" height="18px" viewBox="0 0 18 18">
+              <path d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z"></path>
+              <polyline points="1 9 7 14 15 4"></polyline>
+          </svg>
+      </label>
+    </div> 
+    <div class="box box10">
+      <h2>05</h2>
+      <br>
+      <p class="report">Epidemiology Insights Map</p>
+      <p class="description">Analyze disease incidence rates by geographic location. This map-based report visualizes disease incidence rates, aiding in understanding disease prevalence and distribution.</p>
+      <img src="{{ url_for('static', filename='images/images.png') }}" alt="Icon Photo" class="icon-photo">
+    <img src="{{ url_for('static', filename='images/images (5).png') }}" alt="Icon Photo" class="icon-photo">
+    <img src="{{ url_for('static', filename='images/png-transparent-salem-google-maps-geographic-information-system-location-admissions-blue-angle-rectangle.png') }}" alt="Icon Photo" class="icon-photo">
+    <img src="{{ url_for('static', filename='images/images.jpg') }}" alt="Icon Photo" class="icon-photo">
+      <input type="checkbox" id="cbx10"  name="template_name" value=".pbit">
+      <label for="cbx10" class="check">
+          <svg width="18px" height="18px" viewBox="0 0 18 18">
+              <path d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z"></path>
+              <polyline points="1 9 7 14 15 4"></polyline>
+          </svg>
+      </label>
+    </div> 
+   <!-- Add a hidden input for template_name outside the loop -->
+   <input type="hidden" name="template_name" id="template_name">
+    <button id="reportButton" class="button" type="submit">Download Chosen Reports</button></form>
+    <form action="/download_all" method="get">
+      <button id="dataButton" class="button" type="submit">Download Cleaned Data</button>
+  </form>
+  <div id="loader" class="loader"></div>
+
+  <div class="arrow arrow-left">&lt;</div>
+  <div class="arrow arrow-right">&gt;</div>
+  
+
+
+
+  <script src="{{ url_for('static', filename='js/javat.js') }}" defer></script>
+
+</body></html>

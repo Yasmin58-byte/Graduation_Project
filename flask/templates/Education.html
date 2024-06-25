@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="{{ url_for('static', filename='images/Blue_And_White_Minimalist_Modern_Financial_Company_-_Logo-removebg-preview.png')}}">
+  <title>Education Reports</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/css.css') }}">
+  <link rel="icon" type="image/png" href="{{ url_for('static', filename='images/IMG-20231020-WA0006-removebg-preview.png') }}">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/swiper-bundle.min.css">
+</head>
+<body>
+  <div class="container">
+    <div class="logo-container">
+      <img src="{{ url_for('static', filename='images/IMG-20231020-WA0006-removebg-preview.png') }}" class="logo">    </div>
+    <div class="back-link">
+        <p>Back</p>
+    </div>       
+</div>
+<div>
+    <h1>Your Choice, Your Report</h1>
+    <h3>Your Domain is  {{ predicted_domains }}</h3>
+</div>
+  <div class="container">
+    
+    <div class="box box16">
+      <form action="/download_template" method="post" id="reportForm">
+
+      <h2>01</h2>
+      <br>
+      <p class="report">Student Performance Dashboard</p>
+      <p class="description">Track student academic performance and attendance. This dashboard monitors student grades and attendance records, providing insights into student performance and engagement.</p>
+      <img src="{{ url_for('static', filename='images/10307728.png') }}" alt="Icon Photo" class="icon-photo">
+    <img src="{{ url_for('static', filename='images/images (1).png') }}" alt="Icon Photo" class="icon-photo">
+    <img src="{{ url_for('static', filename='images/images.png') }}" alt="Icon Photo" class="icon-photo">
+    <img src="{{ url_for('static', filename='images/radar-chart-1.png') }}" alt="Icon Photo" class="icon-photo">
+      <input type="checkbox" id="cbx16"  name="template_name" value=".pbit">
+      <label for="cbx16" class="check">
+          <svg width="18px" height="18px" viewBox="0 0 18 18">
+              <path d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z"></path>
+              <polyline points="1 9 7 14 15 4"></polyline>
+          </svg>
+      </label>
+    </div> 
+    <div class="box box17">
+      <h2>02</h2>
+      <br>
+      <p class="report">Curriculum Assessment Radar</p>
+      <p class="description">Evaluation of curriculum effectiveness by leveraging student feedback. Through a radar chart, it visually represents learning outcomes and gathers invaluable student input. This aids educators in pinpointing areas for enhancement and refining the curriculum to better meet the needs of learners.</p>
+      <img src="{{ url_for('static', filename='images/download (1).png') }}" alt="Icon Photo" class="icon-photo">
+    <img src="{{ url_for('static', filename='images/7581108.png') }}" alt="Icon Photo" class="icon-photo">
+    <img src="{{ url_for('static', filename='images/images.png') }}" alt="Icon Photo" class="icon-photo">
+    <img src="{{ url_for('static', filename='images/images (6).png') }}" alt="Icon Photo" class="icon-photo">
+      <input type="checkbox" id="cbx17" name="template_name" value=".pbit">
+      <label for="cbx17" class="check">
+          <svg width="18px" height="18px" viewBox="0 0 18 18">
+              <path d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z"></path>
+              <polyline points="1 9 7 14 15 4"></polyline>
+          </svg>
+      </label>
+    </div> 
+    <div class="box box18">
+      <h2>03</h2>
+      <br>
+      <p class="report">Dropout Rate Monitor</p>
+      <p class="description">Monitor student dropout rates over time. This monitor tracks student dropout status, aiding in identifying patterns and risk factors for dropout.</p>
+      <img src="{{ url_for('static', filename='images/kisspng-pie-chart-computer-icons-line-chart-area-chart-chart-5aba331e5514d2.5526435915221522223485.jpg') }}" alt="Icon Photo" class="icon-photo">
+      <img src="{{ url_for('static', filename='images/images (1).png') }}" alt="Icon Photo" class="icon-photo">
+      <img src="{{ url_for('static', filename='images/images.png') }}" alt="Icon Photo" class="icon-photo">
+      <img src="{{ url_for('static', filename='images/9616071.png') }}" alt="Icon Photo" class="icon-photo">
+      <input type="checkbox" id="cbx18"  name="template_name" value=".pbit">
+      <label for="cbx18" class="check">
+          <svg width="18px" height="18px" viewBox="0 0 18 18">
+              <path d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z"></path>
+              <polyline points="1 9 7 14 15 4"></polyline>
+          </svg>
+      </label>
+    </div> 
+    <div class="box box19">
+      <h2>04</h2>
+      <br>
+      <p class="report">Teacher Effectiveness Dashboard</p>
+      <p class="description">Assess teacher effectiveness based on student performance. This dashboard analyzes student performance data to evaluate teacher effectiveness in supporting student learning and achievement.</p>
+      <img src="{{ url_for('static', filename='images/images.png') }}" alt="Icon Photo" class="icon-photo">
+      <img src="{{ url_for('static', filename='images/radar-chart-1.png') }}" alt="Icon Photo" class="icon-photo">
+      <img src="{{ url_for('static', filename='images/10307728.png') }}" alt="Icon Photo" class="icon-photo">
+      <img src="{{ url_for('static', filename='images/images (7).png') }}" alt="Icon Photo" class="icon-photo">
+      <input type="checkbox" id="cbx19"  name="template_name" value=".pbit">
+      <label for="cbx19" class="check">
+          <svg width="18px" height="18px" viewBox="0 0 18 18">
+              <path d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z"></path>
+              <polyline points="1 9 7 14 15 4"></polyline>
+          </svg>
+      </label>
+    </div> 
+    <div class="box box20">
+      <h2>05</h2>
+      <br>
+      <p class="report">Learning Analytics Radar</p>
+      <p class="description">Analyze student learning patterns and engagement. This radar chart visualizes student learning patterns and engagement metrics, aiding in understanding student behaviors and preferences.</p>
+      <img src="{{ url_for('static', filename='images/images.png') }}" alt="Icon Photo" class="icon-photo">
+      <img src="{{ url_for('static', filename='images/download (1).png') }}" alt="Icon Photo" class="icon-photo">
+      <img src="{{ url_for('static', filename='images/10307728.png') }}" alt="Icon Photo" class="icon-photo">
+      <img src="{{ url_for('static', filename='images/7581108.png') }}" alt="Icon Photo" class="icon-photo">
+      <input type="checkbox" id="cbx20"  name="template_name" value=".pbit">
+      <label for="cbx20" class="check">
+          <svg width="18px" height="18px" viewBox="0 0 18 18">
+              <path d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z"></path>
+              <polyline points="1 9 7 14 15 4"></polyline>
+          </svg>
+      </label>
+    </div> 
+  </div>
+
+   <!-- Add a hidden input for template_name outside the loop -->
+   <input type="hidden" name="template_name" id="template_name">
+  
+  <button id="reportButton" class="button" type="submit">Download Chosen Reports</button></form>
+  <form action="/download_all" method="get">
+    <button id="dataButton" class="button" type="submit">Download Cleaned Data</button>
+</form>
+  <div id="loader" class="loader"></div>
+
+  <div class="arrow arrow-left">&lt;</div>
+  <div class="arrow arrow-right">&gt;</div>
+
+
+
+  <script src="{{ url_for('static', filename='js/javat.js') }}" defer></script>
+
+</body></html>
